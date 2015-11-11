@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron text-center"><h1><b>OVPD Contacts Database</b></h1></div>
+
+<%= render 'search' %>
+<hr>
+<%= render 'results' %>
+<hr>
+<%= link_to '<i class="fa fa-plus"></i> New Contact'.html_safe, new_contact_path, {:style=>'color:#EBECB0;', :class => "pull-right"} %>
+
+

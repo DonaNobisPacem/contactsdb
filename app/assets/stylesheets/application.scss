@@ -1,0 +1,43 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$body-bg: #557351 !default;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "masonry/basic";
+@import "masonry/centered";
+@import "masonry/fluid";
+@import "masonry/gutters";
+@import "masonry/infinitescroll";
+@import "masonry/right-to-left";
+@import "masonry/transitions";
+
+body { padding-top: 50px; }
+
+.search-button
+{
+    margin-left:-4px;
+}

@@ -1,0 +1,27 @@
+<%= simple_form_for(@contact) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <div class="row">
+      <div class="col-xs-12"> <%= f.input :contact_name, :label => "Name:" %> </div>
+      <div class="col-xs-6"> <%= f.input :position, :label => "Position:" %> </div>
+      <div class="col-xs-6"> <%= f.input :affiliation, :label => "Affiliation:" %> </div>
+      <div class="col-xs-12"> <%= f.input :context, :label => "Context of Meeting" %> </div>
+    </div>
+
+    <h3><b>Contact Details:</b></h3>
+
+    <div class="row">
+      <div class="col-xs-12"> <%= f.input :address, :label => "Physical Address:" %> </div>
+      <div class="col-xs-6"> <%= f.input :mobile, :label => "Mobile:" %> </div>
+      <div class="col-xs-6"> <%= f.input :email, :label => "Email:" %> </div>
+      <div class="col-xs-6"> <%= f.input :landline, :label => "Landline:" %> </div>
+      <div class="col-xs-6"> <%= f.input :fax, :label => "Fax:" %> </div>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => "btn btn-success pull-right" %>
+  </div>
+<% end %>
+

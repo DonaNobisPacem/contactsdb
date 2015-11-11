@@ -1,0 +1,18 @@
+<div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
+  <% @contacts.each do |contact| %>
+  <div class="box">
+    <strong>Name: </strong> <%= contact.contact_name %><br>
+    <strong>Position: </strong> <%= contact.position %><br>
+    <strong>Affiliation: </strong> <%= contact.affiliation %><br>
+    <strong>Context of Meeting: </strong> <%= contact.context %><br>
+    <br>
+    <strong><u>Contact Info:</u></strong><br>
+    <strong>Address: </strong> <%= contact.address %><br>
+    <strong>Email: </strong> <%= contact.email %><br>
+    <strong>Mobile: </strong> <%= contact.mobile %><br>
+    <strong>Landline: </strong> <%= contact.landline %><br>
+    <strong>Fax: </strong> <%= contact.fax %><br>
+    <div class="pull-right"><%= link_to 'Edit', edit_contact_path(contact) %> | <%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  </div>
+  <% end %>
+</div>

@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
     if params[:search].present?
       @contacts = Contact.search(params[:search])
     else
-      @contacts = Contact.all
+      @contacts = []
     end
   end
 

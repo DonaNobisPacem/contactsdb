@@ -52,6 +52,7 @@ group :development do
 
   # Development server
   gem 'thin'
+  gem 'rails-erd'
 end
 
 # Twitter Bootstrap + Font Awesome

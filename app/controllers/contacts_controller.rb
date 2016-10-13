@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   # GET /contacts.json
   def index
     if params[:search].present?
-      @contacts = Contact.search(params[:search])
+      @contacts = Contact.search(params[:search], misspellings: false) 
     else
       @contacts = []
     end
